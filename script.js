@@ -20,7 +20,9 @@ const INSTRUMENTS = [
     fireInterval: 160,
     projectileSpeed: 720,
     pattern: "spread",
-    super: "Overdrive Solo"
+    super: "Overdrive Solo",
+    sample: "assets/audio/guitar_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "piano",
@@ -32,7 +34,9 @@ const INSTRUMENTS = [
     fireInterval: 180,
     projectileSpeed: 660,
     pattern: "twin",
-    super: "Grand Crescendo"
+    super: "Grand Crescendo",
+    sample: "assets/audio/piano_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "drum",
@@ -44,7 +48,9 @@ const INSTRUMENTS = [
     fireInterval: 120,
     projectileSpeed: 820,
     pattern: "burst",
-    super: "Bass Drop"
+    super: "Bass Drop",
+    sample: "assets/audio/drum_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "turntable",
@@ -56,7 +62,9 @@ const INSTRUMENTS = [
     fireInterval: 200,
     projectileSpeed: 700,
     pattern: "arc",
-    super: "Ultimate Drop"
+    super: "Ultimate Drop",
+    sample: "assets/audio/turntable_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "violin",
@@ -68,7 +76,9 @@ const INSTRUMENTS = [
     fireInterval: 190,
     projectileSpeed: 760,
     pattern: "pierce",
-    super: "Stellar Vibrato"
+    super: "Stellar Vibrato",
+    sample: "assets/audio/violin_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "sax",
@@ -80,7 +90,9 @@ const INSTRUMENTS = [
     fireInterval: 170,
     projectileSpeed: 660,
     pattern: "swing",
-    super: "Blue Note"
+    super: "Blue Note",
+    sample: "assets/audio/sax_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "harp",
@@ -92,7 +104,9 @@ const INSTRUMENTS = [
     fireInterval: 240,
     projectileSpeed: 540,
     pattern: "homing",
-    super: "Celestial Gliss"
+    super: "Celestial Gliss",
+    sample: "assets/audio/harp_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "bass",
@@ -104,7 +118,9 @@ const INSTRUMENTS = [
     fireInterval: 260,
     projectileSpeed: 880,
     pattern: "beam",
-    super: "Subquake"
+    super: "Subquake",
+    sample: "assets/audio/bass_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "flute",
@@ -116,7 +132,9 @@ const INSTRUMENTS = [
     fireInterval: 150,
     projectileSpeed: 600,
     pattern: "spiral",
-    super: "Skyline Trill"
+    super: "Skyline Trill",
+    sample: "assets/audio/flute_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "trumpet",
@@ -128,7 +146,9 @@ const INSTRUMENTS = [
     fireInterval: 140,
     projectileSpeed: 740,
     pattern: "burst",
-    super: "Fanfarion"
+    super: "Fanfarion",
+    sample: "assets/audio/trumpet_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "kalimba",
@@ -140,7 +160,9 @@ const INSTRUMENTS = [
     fireInterval: 220,
     projectileSpeed: 640,
     pattern: "ricochet",
-    super: "Prismatic Loop"
+    super: "Prismatic Loop",
+    sample: "assets/audio/kalimba_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "accordion",
@@ -152,7 +174,9 @@ const INSTRUMENTS = [
     fireInterval: 210,
     projectileSpeed: 600,
     pattern: "wave",
-    super: "Festival Squeeze"
+    super: "Festival Squeeze",
+    sample: "assets/audio/accordion_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "shamisen",
@@ -164,7 +188,9 @@ const INSTRUMENTS = [
     fireInterval: 200,
     projectileSpeed: 720,
     pattern: "chain",
-    super: "Storm Run"
+    super: "Storm Run",
+    sample: "assets/audio/shamisen_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "bagpipe",
@@ -176,7 +202,9 @@ const INSTRUMENTS = [
     fireInterval: 280,
     projectileSpeed: 520,
     pattern: "wall",
-    super: "Highland Roar"
+    super: "Highland Roar",
+    sample: "assets/audio/bagpipe_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "theremin",
@@ -188,7 +216,9 @@ const INSTRUMENTS = [
     fireInterval: 230,
     projectileSpeed: 580,
     pattern: "curve",
-    super: "Spectral Sweep"
+    super: "Spectral Sweep",
+    sample: "assets/audio/theremin_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "ocarina",
@@ -200,7 +230,9 @@ const INSTRUMENTS = [
     fireInterval: 190,
     projectileSpeed: 560,
     pattern: "spiral",
-    super: "Oceanic Breath"
+    super: "Oceanic Breath",
+    sample: "assets/audio/ocarina_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "organ",
@@ -212,7 +244,9 @@ const INSTRUMENTS = [
     fireInterval: 260,
     projectileSpeed: 780,
     pattern: "column",
-    super: "Choir Nova"
+    super: "Choir Nova",
+    sample: "assets/audio/organ_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "steelpan",
@@ -224,7 +258,9 @@ const INSTRUMENTS = [
     fireInterval: 210,
     projectileSpeed: 640,
     pattern: "bounce",
-    super: "Carnival Pulse"
+    super: "Carnival Pulse",
+    sample: "assets/audio/steelpan_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "koto",
@@ -236,7 +272,9 @@ const INSTRUMENTS = [
     fireInterval: 170,
     projectileSpeed: 700,
     pattern: "phase",
-    super: "Illusion Echo"
+    super: "Illusion Echo",
+    sample: "assets/audio/koto_hit.wav",
+    sampleRoot: 261.63
   },
   {
     id: "keytar",
@@ -248,7 +286,9 @@ const INSTRUMENTS = [
     fireInterval: 120,
     projectileSpeed: 760,
     pattern: "hybrid",
-    super: "Photon Storm"
+    super: "Photon Storm",
+    sample: "assets/audio/keytar_hit.wav",
+    sampleRoot: 261.63
   }
 ];
 
@@ -330,7 +370,7 @@ const MODES = [
     description: "Stage-based setlist 3-5 minutes with progressive waves.",
     stageDuration: 180,
     difficulty: 1.0,
-    rewards: { coin: 400, diamond: 2, sheet: 1 }
+    rewards: { coin: 420, diamond: 2, sheet: 1 }
   },
   {
     id: "raid",
@@ -338,7 +378,7 @@ const MODES = [
     description: "Extended showdown against a music monstrosity.",
     stageDuration: 240,
     difficulty: 1.5,
-    rewards: { coin: 650, diamond: 4, sheet: 2 }
+    rewards: { coin: 720, diamond: 4, sheet: 2 }
   },
   {
     id: "daily",
@@ -346,7 +386,7 @@ const MODES = [
     description: "Beat-synced challenge with modifier twists.",
     stageDuration: 120,
     difficulty: 1.2,
-    rewards: { coin: 300, diamond: 1, sheet: 1 }
+    rewards: { coin: 320, diamond: 1, sheet: 1 }
   },
   {
     id: "pvp",
@@ -354,9 +394,44 @@ const MODES = [
     description: "Chase high score ghost battles asynchronously.",
     stageDuration: 150,
     difficulty: 1.3,
-    rewards: { coin: 350, diamond: 3, sheet: 1 }
+    rewards: { coin: 360, diamond: 3, sheet: 1 }
   }
 ];
+
+const MODE_BALANCE = {
+  campaign: {
+    spawnInterval: [1.6, 2.8],
+    enemyHp: 1.0,
+    enemyValue: 1.0,
+    bossHp: 1.0,
+    bossEntry: 0.78,
+    rewardBonus: 1.0
+  },
+  raid: {
+    spawnInterval: [2.0, 2.6],
+    enemyHp: 1.2,
+    enemyValue: 1.2,
+    bossHp: 1.75,
+    bossEntry: 0.0,
+    rewardBonus: 1.2
+  },
+  daily: {
+    spawnInterval: [1.2, 2.0],
+    enemyHp: 0.9,
+    enemyValue: 1.1,
+    bossHp: 0.9,
+    bossEntry: 0.7,
+    rewardBonus: 1.05
+  },
+  pvp: {
+    spawnInterval: [1.3, 2.2],
+    enemyHp: 1.1,
+    enemyValue: 1.0,
+    bossHp: 1.1,
+    bossEntry: 0.82,
+    rewardBonus: 1.0
+  }
+};
 
 const POWERUPS = [
   {
@@ -468,6 +543,7 @@ const DAILY_MODIFIERS = [
 ];
 
 const STORAGE_KEY = "music-force-progress-v1";
+const TUTORIAL_KEY = "music-force-tutorial-v1";
 const DEFAULT_PROGRESS = {
   coin: 1800,
   diamond: 5,
@@ -475,6 +551,25 @@ const DEFAULT_PROGRESS = {
   unlockedInstruments: INSTRUMENTS.filter((_, idx) => idx < 4).map(inst => inst.id),
   unlockedCompanions: COMPANIONS.length ? [COMPANIONS[0].id] : []
 };
+
+const TUTORIAL_STEPS = [
+  {
+    title: "Welcome to Music Force",
+    body: "Drag anywhere on the stage to weave through the beat while auto-fire handles your notes."
+  },
+  {
+    title: "Dash & Weave",
+    body: "Swipe horizontally for a tempo dash. Use it to slip through dense bullet patterns without breaking combo."
+  },
+  {
+    title: "Super Solo",
+    body: "Fill the Skill bar to unlock your Super Solo. Double tap (or press Space) to drop it immediately."
+  },
+  {
+    title: "Resonance Burst",
+    body: "Successful hits charge Resonance. When full, your companion auto-launches a burst to keep the rhythm safe."
+  }
+];
 
 function deepClone(value) {
   return JSON.parse(JSON.stringify(value));
@@ -516,6 +611,143 @@ function saveProgress() {
 
 let progress = loadProgress();
 
+class AudioManager {
+  constructor() {
+    this.buffers = new Map();
+    this.loading = new Map();
+    this.context = null;
+    this.output = null;
+  }
+
+  setContext(ctx, output) {
+    this.context = ctx;
+    this.output = output;
+  }
+
+  prepareInstrument(instrument) {
+    if (!instrument || !instrument.sample || !this.context) return Promise.resolve();
+    const key = this.instrumentKey(instrument.id);
+    if (this.buffers.has(key)) return Promise.resolve(this.buffers.get(key));
+    if (this.loading.has(key)) return this.loading.get(key);
+    const promise = this.loadSample(key, instrument.sample);
+    this.loading.set(key, promise);
+    promise.finally(() => this.loading.delete(key));
+    return promise;
+  }
+
+  instrumentKey(id) {
+    return `inst:${id}`;
+  }
+
+  async loadSample(key, url) {
+    if (!this.context) return null;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Failed to load sample ${url}`);
+      const arrayBuffer = await response.arrayBuffer();
+      const buffer = await this.context.decodeAudioData(arrayBuffer);
+      this.buffers.set(key, buffer);
+      return buffer;
+    } catch (error) {
+      console.warn("Audio sample load failed", url, error);
+      return null;
+    }
+  }
+
+  playInstrument(instrument, freq) {
+    if (!this.context || !instrument || !instrument.sample) return false;
+    const key = this.instrumentKey(instrument.id);
+    const buffer = this.buffers.get(key);
+    if (!buffer) {
+      this.prepareInstrument(instrument);
+      return false;
+    }
+    const source = this.context.createBufferSource();
+    source.buffer = buffer;
+    const root = instrument.sampleRoot || 261.63;
+    source.playbackRate.value = clamp(freq / root, 0.5, 2.5);
+    const gain = this.context.createGain();
+    gain.gain.value = 0.85;
+    source.connect(gain);
+    gain.connect(this.output);
+    source.start();
+    return true;
+  }
+
+  playFallback(freq, duration = 0.25, type = "sine") {
+    if (!this.context) return;
+    const oscillator = this.context.createOscillator();
+    const gain = this.context.createGain();
+    oscillator.type = type;
+    oscillator.frequency.value = freq;
+    oscillator.connect(gain);
+    gain.connect(this.output);
+    gain.gain.setValueAtTime(0.001, this.context.currentTime);
+    gain.gain.linearRampToValueAtTime(0.6, this.context.currentTime + 0.01);
+    gain.gain.exponentialRampToValueAtTime(0.001, this.context.currentTime + duration);
+    oscillator.start();
+    oscillator.stop(this.context.currentTime + duration + 0.05);
+  }
+}
+
+const audioManager = new AudioManager();
+
+function isTutorialCompleted() {
+  if (typeof localStorage === "undefined") return false;
+  return localStorage.getItem(TUTORIAL_KEY) === "done";
+}
+
+function markTutorialCompleted() {
+  if (typeof localStorage === "undefined") return;
+  localStorage.setItem(TUTORIAL_KEY, "done");
+}
+
+let tutorialIndex = 0;
+let pendingStartPayload = null;
+
+function showTutorial(pendingPayload) {
+  if (!tutorialOverlay || isTutorialCompleted()) {
+    startPendingGame(pendingPayload);
+    return;
+  }
+  menuOverlay.classList.add("hidden");
+  summaryOverlay.classList.add("hidden");
+  if (menuNotice) menuNotice.classList.add("hidden");
+  pendingStartPayload = pendingPayload;
+  tutorialIndex = 0;
+  updateTutorialStep();
+  tutorialOverlay.classList.remove("hidden");
+}
+
+function hideTutorial() {
+  if (!tutorialOverlay) return;
+  tutorialOverlay.classList.add("hidden");
+}
+
+function updateTutorialStep() {
+  if (!tutorialOverlay) return;
+  const step = TUTORIAL_STEPS[tutorialIndex];
+  if (!step) {
+    markTutorialCompleted();
+    hideTutorial();
+    startPendingGame();
+    return;
+  }
+  tutorialTitle.textContent = step.title;
+  tutorialBody.textContent = step.body;
+  tutorialNext.textContent = tutorialIndex === TUTORIAL_STEPS.length - 1 ? "Start" : "Next";
+}
+
+function startPendingGame(payload = pendingStartPayload) {
+  if (!payload) return;
+  const { instrumentId, companionId, modeId } = payload;
+  menuOverlay.classList.add("hidden");
+  summaryOverlay.classList.add("hidden");
+  if (menuNotice) menuNotice.classList.add("hidden");
+  game.start(instrumentId, companionId, modeId);
+  pendingStartPayload = null;
+}
+
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 const hpBar = document.getElementById("hpBar");
@@ -538,6 +770,11 @@ const menuNotice = document.getElementById("menuNotice");
 const coinLabel = document.getElementById("coinCount");
 const diamondLabel = document.getElementById("diamondCount");
 const sheetLabel = document.getElementById("sheetCount");
+const tutorialOverlay = document.getElementById("tutorialOverlay");
+const tutorialTitle = document.getElementById("tutorialTitle");
+const tutorialBody = document.getElementById("tutorialBody");
+const tutorialNext = document.getElementById("tutorialNext");
+const tutorialSkip = document.getElementById("tutorialSkip");
 
 let audioContext = null;
 let masterGain = null;
@@ -697,21 +934,16 @@ function initAudio() {
   masterGain = audioContext.createGain();
   masterGain.gain.value = 0.13;
   masterGain.connect(audioContext.destination);
+  audioManager.setContext(audioContext, masterGain);
 }
 
-function playNote(freq, duration = 0.25, type = "sine") {
+function playNote(freq, duration = 0.25, type = "sine", options = {}) {
   if (!audioContext) return;
-  const oscillator = audioContext.createOscillator();
-  const gain = audioContext.createGain();
-  oscillator.type = type;
-  oscillator.frequency.value = freq;
-  oscillator.connect(gain);
-  gain.connect(masterGain);
-  gain.gain.setValueAtTime(0.001, audioContext.currentTime);
-  gain.gain.exponentialRampToValueAtTime(1.0, audioContext.currentTime + 0.01);
-  gain.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + duration);
-  oscillator.start();
-  oscillator.stop(audioContext.currentTime + duration + 0.05);
+  const instrument = options.instrument;
+  if (instrument && audioManager.playInstrument(instrument, freq)) {
+    return;
+  }
+  audioManager.playFallback(freq, duration, type);
 }
 
 function lerp(a, b, t) {
@@ -1129,6 +1361,7 @@ class Game {
   start(instrumentId, companionId, modeId) {
     initAudio();
     this.mode = MODES.find(m => m.id === modeId) || MODES[0];
+    this.balance = MODE_BALANCE[this.mode.id] || MODE_BALANCE.campaign;
     this.permanentBuffs = { echo: false, reverb: false };
     this.comboDecayRate = 1;
     this.playerMoveFactor = 0.18;
@@ -1140,6 +1373,7 @@ class Game {
     const instrument = INSTRUMENTS.find(i => i.id === instrumentId) || INSTRUMENTS[0];
     const companion = COMPANIONS.find(c => c.id === companionId) || null;
     this.player = new Player(instrument, companion);
+    audioManager.prepareInstrument(instrument);
     this.projectiles = [];
     this.enemies = [];
     this.particles = [];
@@ -1585,8 +1819,9 @@ class Game {
   }
 
   spawnWave() {
+    const balance = this.balance || MODE_BALANCE.campaign;
     const difficulty = this.difficultyMultiplier + this.elapsed / 90;
-    const spawnCount = Math.ceil(rand(1, 2 + difficulty));
+    const spawnCount = Math.ceil(rand(1, 1 + difficulty * 0.9));
     for (let i = 0; i < spawnCount; i++) {
       const typeRoll = Math.random();
       let config;
@@ -1602,33 +1837,39 @@ class Game {
       this.enemies.push(new Enemy(config));
     }
 
-    if (!this.bossSpawned && (this.elapsed > this.stageDuration * 0.8)) {
+    if (!this.bossSpawned && (this.elapsed > this.stageDuration * balance.bossEntry)) {
       const boss = new Enemy(this.createBossConfig());
       this.enemies.push(boss);
       this.bossSpawned = true;
     }
 
-    this.spawnTimer = rand(2, 4) / difficulty;
+    const [minInterval, maxInterval] = balance.spawnInterval || [1.8, 3.0];
+    const interval = rand(minInterval, maxInterval);
+    this.spawnTimer = interval / difficulty;
   }
 
   createEnemyConfig(pattern) {
+    const balance = this.balance || MODE_BALANCE.campaign;
+    const hpBase = (pattern === "spiral" ? 80 : 60) * this.difficultyMultiplier * balance.enemyHp;
+    const valueBase = (pattern === "spiral" ? 90 : 60) * balance.enemyValue;
     return {
       x: rand(60, canvas.width - 60),
       y: -40,
       radius: pattern === "dash" ? 32 : 26,
-      hp: (pattern === "spiral" ? 80 : 60) * this.difficultyMultiplier,
+      hp: hpBase,
       speed: (pattern === "base" ? 160 : pattern === "dash" ? 220 : 140) * 0.6,
       pattern,
       fireInterval: pattern === "dash" ? 1.5 : rand(1.6, 2.4),
       color: pattern === "spiral" ? "#9d8dff" : pattern === "dash" ? "#ff9f68" : "#ff4f81",
-      value: pattern === "spiral" ? 90 : 60
+      value: valueBase
     };
   }
 
   createBossConfig() {
+    const balance = this.balance || MODE_BALANCE.campaign;
     const theme = pick(BOSS_THEMES);
     this.currentBoss = theme.label;
-    const baseHp = this.mode.id === "raid" ? 5200 : 3200;
+    const baseHp = (this.mode.id === "raid" ? 5200 : 3200) * balance.bossHp;
     return {
       x: canvas.width / 2,
       y: -120,
@@ -1670,7 +1911,8 @@ class Game {
         this.player.chargeSkill(3);
         this.player.chargeResonance(1.6);
         if (projectile.noteIndex != null) {
-          playNote(NOTES[projectile.noteIndex % NOTES.length].freq, 0.22, "sawtooth");
+          const note = NOTES[projectile.noteIndex % NOTES.length];
+          playNote(note.freq, 0.22, "sawtooth", { instrument: this.player.instrument, noteName: note.name });
         }
         this.emitParticles(enemy.x, enemy.y, enemy.color);
 
@@ -1794,7 +2036,14 @@ class Game {
   finishStage() {
     this.running = false;
     const cleared = !this.player.dead;
-    const rewards = cleared ? this.mode.rewards : { coin: Math.floor(this.mode.rewards.coin * 0.3), diamond: 0, sheet: 0 };
+    const balance = this.balance || MODE_BALANCE.campaign;
+    const baseRewards = cleared ? this.mode.rewards : { coin: Math.floor(this.mode.rewards.coin * 0.3), diamond: 0, sheet: 0 };
+    const rewardMultiplier = cleared ? balance.rewardBonus : 1;
+    const rewards = {
+      coin: Math.round(baseRewards.coin * rewardMultiplier),
+      diamond: Math.round(baseRewards.diamond * rewardMultiplier),
+      sheet: baseRewards.sheet
+    };
     applyRewards(rewards);
     this.summary = {
       cleared,
@@ -1926,8 +2175,13 @@ refreshCompanionSelect();
 populateSelect(modeSelect, MODES);
 updateInventoryUI();
 updateLoadoutDescription();
+audioManager.prepareInstrument(INSTRUMENTS.find(inst => inst.id === instrumentSelect.value));
 
-instrumentSelect.addEventListener("change", updateLoadoutDescription);
+instrumentSelect.addEventListener("change", () => {
+  updateLoadoutDescription();
+  const instrument = INSTRUMENTS.find(inst => inst.id === instrumentSelect.value);
+  audioManager.prepareInstrument(instrument);
+});
 companionSelect.addEventListener("change", updateLoadoutDescription);
 modeSelect.addEventListener("change", updateLoadoutDescription);
 
@@ -1937,12 +2191,12 @@ startButton.addEventListener("click", () => {
     return;
   }
   const companionId = companionSelect.value === "none" ? null : companionSelect.value;
-  menuOverlay.classList.add("hidden");
-  summaryOverlay.classList.add("hidden");
-  if (menuNotice) {
-    menuNotice.classList.add("hidden");
-  }
-  game.start(instrumentSelect.value, companionId, modeSelect.value);
+  const payload = {
+    instrumentId: instrumentSelect.value,
+    companionId,
+    modeId: modeSelect.value
+  };
+  showTutorial(payload);
 });
 
 if (unlockButton) {
@@ -1968,6 +2222,27 @@ continueButton.addEventListener("click", () => {
   refreshCompanionSelect();
   updateLoadoutDescription();
 });
+
+if (tutorialNext) {
+  tutorialNext.addEventListener("click", () => {
+    tutorialIndex += 1;
+    if (tutorialIndex >= TUTORIAL_STEPS.length) {
+      markTutorialCompleted();
+      hideTutorial();
+      startPendingGame();
+    } else {
+      updateTutorialStep();
+    }
+  });
+}
+
+if (tutorialSkip) {
+  tutorialSkip.addEventListener("click", () => {
+    markTutorialCompleted();
+    hideTutorial();
+    startPendingGame();
+  });
+}
 
 function showSummary(summary) {
   summaryOverlay.classList.remove("hidden");
