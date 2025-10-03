@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Force: Rhythm Shooter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="hud">
+      <div class="hud-group">
+        <span class="label">HP</span>
+        <div class="sound-bar" id="hpBar"></div>
+      </div>
+      <div class="hud-group">
+        <span class="label">Skill</span>
+        <div class="sound-bar" id="skillBar"></div>
+      </div>
+      <div class="hud-group">
+        <span class="label">Resonance</span>
+        <div class="sound-bar" id="resonanceBar"></div>
+      </div>
+      <div class="hud-group stat">
+        <span id="scoreLabel">Score: 0</span>
+        <span id="comboLabel">Combo: 0</span>
+      </div>
+      <div class="hud-group currency">
+        <span class="label">Inventory</span>
+        <div class="currency-values">
+          <span id="coinCount">Coin 0</span>
+          <span id="diamondCount">Diamond 0</span>
+          <span id="sheetCount">Sheet 0</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="game-area">
+      <canvas id="gameCanvas" width="540" height="960"></canvas>
+      <div class="overlay" id="menuOverlay">
+        <h1>Music Force</h1>
+        <p>Rhythm Shooter</p>
+        <div class="menu-block">
+          <label for="modeSelect">Mode</label>
+          <select id="modeSelect"></select>
+        </div>
+        <div class="menu-block">
+          <label for="instrumentSelect">Instrument</label>
+          <select id="instrumentSelect"></select>
+        </div>
+        <div class="menu-block">
+          <label for="companionSelect">Companion</label>
+          <select id="companionSelect"></select>
+        </div>
+        <section class="menu-desc" id="loadoutDescription"></section>
+        <div class="menu-actions">
+          <button id="unlockButton" class="secondary hidden">Unlock</button>
+          <button id="startButton">Start Stage</button>
+        </div>
+        <div class="menu-notice hidden" id="menuNotice"></div>
+      </div>
+      <div class="overlay hidden" id="stageSummary">
+        <h2 id="summaryTitle"></h2>
+        <p id="summaryStats"></p>
+        <button id="continueButton">Continue</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="controls">
+    <p>Drag to move. Auto-shoot active. Double tap to trigger Super Solo when charged. Horizontal swipe to dash.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

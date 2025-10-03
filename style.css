@@ -1,0 +1,258 @@
+:root {
+  color-scheme: dark;
+  --bg: #02010f;
+  --hud: rgba(18, 16, 38, 0.9);
+  --accent: #6c5cff;
+  --accent-soft: rgba(108, 92, 255, 0.28);
+  --danger: #ff4f81;
+  --text: #eae7ff;
+  --muted: #a8a0d8;
+  --good: #3dffb1;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #311070, var(--bg));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  backdrop-filter: blur(12px);
+  padding: 16px;
+}
+
+.hud {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: var(--hud);
+  border: 1px solid var(--accent-soft);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow: 0 12px 40px rgba(16, 8, 48, 0.6);
+}
+
+.hud-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+  gap: 4px;
+}
+
+.hud-group.stat {
+  min-width: 160px;
+  text-align: center;
+}
+
+.hud-group.currency {
+  min-width: 180px;
+}
+
+.currency-values {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.currency-values span {
+  display: flex;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.sound-bar {
+  position: relative;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.sound-bar .bar-fill {
+  position: absolute;
+  inset: 0;
+  width: 0;
+  border-radius: inherit;
+  transition: width 0.18s ease-out;
+}
+
+.sound-bar .bar-fill.hp {
+  background: linear-gradient(90deg, #3dffb1, #9af7ff);
+}
+
+.sound-bar .bar-fill.skill {
+  background: linear-gradient(90deg, #6c5cff, #ff9f68);
+}
+
+.sound-bar .bar-fill.res {
+  background: linear-gradient(90deg, #6c5cff, #9af7ff);
+}
+
+.game-area {
+  position: relative;
+  width: 540px;
+  aspect-ratio: 9 / 16;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 60px rgba(8, 4, 24, 0.6);
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at bottom, #120934, #060425 60%);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 4, 26, 0.86);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  padding: 24px;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.menu-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: min(320px, 80%);
+}
+
+select, button {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: var(--text);
+  padding: 10px 16px;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: rgba(108, 92, 255, 0.32);
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: none;
+}
+
+button:disabled:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+button.secondary {
+  background: rgba(108, 92, 255, 0.18);
+  border-color: rgba(108, 92, 255, 0.3);
+}
+
+button.secondary:hover {
+  background: rgba(108, 92, 255, 0.32);
+}
+
+.menu-desc {
+  max-width: 360px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  min-height: 110px;
+}
+
+.menu-desc .locked {
+  display: block;
+  color: var(--danger);
+  margin-top: 6px;
+  font-size: 0.85rem;
+}
+
+.menu-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.menu-notice {
+  font-size: 0.85rem;
+  color: var(--muted);
+  min-height: 1.2rem;
+  margin-top: 6px;
+}
+
+.menu-notice[data-tone="success"] {
+  color: #3dffb1;
+}
+
+.menu-notice[data-tone="warn"] {
+  color: #ffce5c;
+}
+
+.controls {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 16px;
+}
+
+.summary-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+@media (max-width: 620px) {
+  .game-area {
+    width: 90vw;
+  }
+
+  .hud {
+    gap: 12px;
+    padding: 10px 12px;
+  }
+
+  .hud-group {
+    min-width: 100px;
+  }
+
+  .currency-values {
+    font-size: 0.8rem;
+  }
+}
